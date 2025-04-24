@@ -1,0 +1,9 @@
+body{
+    background-image: url(assets/backgroundImageNimbus.png);
+}
+
+header .img{
+    width: 150px;
+    height: 100px;
+
+}
