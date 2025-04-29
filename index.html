@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimbus Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!-- Fonte Montserrat -->
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+   <!-- Adicionando Feather Icons CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/feather-icons"></script>
 </head>
-
-<body>     
+<body>
     <header>
-        <img src="assets/sideLogo.png" alt="sideLogo">
-        
-        <nav>
-            <button class="menuToggle" type="button" aria-label="Abrir menu">   <!--botão para menu JS dentro de responsividade -->
-
-            </button>   <!--Fim botão menuBurguer-->
-            
-            
-            <ul class="menuLinks">      <!--container lista de botões (burguerMenu)-->
+        <nav class="navbar">
+            <div class="logo">
+                <!-- Logo da empresa -->
+                <img src="assets/sideLogo.png" alt="Logo Nimbus Insights" width="150">
+            </div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#aboutUs">About us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>       <!--Fim container lista de botões-->
-
-
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+           <!-- Ícone de Modo Claro/Escuro -->
+           <button id="toggle-theme" class="theme-btn">
+            <i data-feather="moon"></i> <!-- Ícone de lua -->
+        </button>
+            
         </nav>
-        
-        
-
     </header>
-
 </body>
-
-
 </html>

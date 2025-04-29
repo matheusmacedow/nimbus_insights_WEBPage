@@ -1,9 +1,77 @@
-body{
-    background-image: url(assets/backgroundImageNimbus.png);
+/* Resetando algumas margens e padding padrões */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e paddings no cálculo de largura e altura */
 }
 
-header .img{
-    width: 150px;
-    height: 100px;
+/* Estilo do Corpo (body) */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte do corpo do texto para Montserrat */
+    background-color: #fffffd; /* Define o fundo como branco no modo claro */
+    color: #0b2a49; /* Define a cor do texto como azul escuro */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves para as mudanças de cor no tema */
+}
 
+/* Estilo da barra de navegação (navbar) */
+.navbar {
+    display: flex; /* Usamos flexbox para organizar os itens em linha */
+    justify-content: space-between; /* Distribui os itens de forma que fiquem afastados um do outro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    background-color: #0b2a49; /* Cor de fundo da navbar em azul escuro */
+    padding: 10px 20px; /* Espaçamento interno da navbar */
+    margin-bottom: 30px; /* Espaço abaixo da navbar para separar as seções */
+}
+
+/* Estilo da logo na navbar */
+.navbar .logo img {
+    width: 120px; /* Define o tamanho da logo */
+    margin-right: 800px; /* Espaço maior entre a logo e os links */
+}
+
+/* Estilo dos links da navbar */
+.nav-links {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens de forma horizontal */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Adiciona um espaçamento entre os itens da navbar */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #fffffd; /* Cor dos links em branco */
+    font-size: 1rem; /* Define o tamanho da fonte dos links */
+    font-weight: 600; /* Aplica um peso de fonte mais grosso (negrito) */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Adiciona uma transição suave nas mudanças de cor e sublinhado */
+}
+
+.nav-links a:hover {
+    color: #3495c8; /* Muda a cor dos links para azul mediano quando o mouse passa por cima */
+    text-decoration: underline; /* Adiciona o sublinhado quando o mouse passa sobre o link */
+}
+
+
+
+
+
+
+/* Estilo do botão de alternância (modo claro/escuro) */
+.theme-btn {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: #fffffd; /* Cor do ícone do botão em branco */
+    font-size: 1.5rem; /* Define o tamanho do ícone */
+    cursor: pointer; /* Torna o cursor como uma mãozinha para indicar interatividade */
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #0b2a49; /* Fundo azul escuro no modo escuro */
+    color: #fffffd; /* Cor do texto em branco no modo escuro */
+}
+
+body.dark-mode .navbar {
+    background-color: #3495c8; /* Cor de fundo da navbar em azul mediano no modo escuro */
 }
